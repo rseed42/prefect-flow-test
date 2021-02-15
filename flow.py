@@ -21,7 +21,7 @@ flow.storage = GitHub(
     access_token_secret='github_secret'
 )
 
-print('---- Just a test ----)
+print('---- Just a test ----')
 
 
 flow.register(project_name='cyrus')
