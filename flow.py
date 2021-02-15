@@ -16,7 +16,12 @@ with Flow("example") as flow:
     print_data(data)
 
 flow.storage = GitHub(
-    repo="org/repo",                            # name of repo
-    path="flows/my_flow.py",                    # location of flow file in repo
-    access_token_secret="GITHUB_ACCESS_TOKEN"   # name of personal access token secret
+    repo="rseed42/prefect-flow-test",
+    path="flow.py",
+    access_token_secret='github_secret'
 )
+
+print('---- Just a test ----)
+
+
+flow.register(project_name='cyrus')
